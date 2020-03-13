@@ -7,7 +7,8 @@ tags:
   - Post Formats
   - readability
   - standard
-  
+header:
+  image: "/assets/images/banner2.jpg"
 ---
 ![full](/assets/images/banner.jpg)
 {: .align-center}
