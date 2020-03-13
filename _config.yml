@@ -70,8 +70,8 @@ comments:
 
 author:
   name   : "Thomas Yuan"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/avatar.jpg"
+  bio    : "Programmer, C++, Java, JavaScript, Docker, Git, Kubernetes, VS Code, Powerline, iOS, Android, AOSP ..."
   location: "Toronto, Canada"
   links:
     - label: "Website"
