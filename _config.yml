@@ -71,7 +71,7 @@ comments:
 author:
   name   : "Thomas Yuan"
   avatar : "/assets/images/avatar.jpg"
-  bio    : "Programmer, C++, Java, JavaScript, Docker, Git, Kubernetes, VS Code, Powerline, iOS, Android, AOSP ..."
+  bio    : "Programmer, C++, Git/GitHub/GitLab, VS Code, Docker, Java, Kubernetes, iOS, AOSP, JavaScript/NodeJS, Android, Jekyll ..."
   location: "Toronto, Canada"
   links:
     - label: "Website"
