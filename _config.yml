@@ -26,8 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: thomasyuan
 minimal_mistakes_skin: default
 search: true
-header:
-  image: "/assets/images/bar.jpeg"
+
 
 # Build settings
 markdown: kramdown
@@ -109,6 +108,8 @@ defaults:
       share: true
       related: true
       classes: wide
+      header:
+        image: "/assets/images/banner.jpg"
 
   # _pages
   - scope:
@@ -118,6 +119,8 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+      header:
+        image: "/assets/images/banner2.jpg"
 
 
 category_archive:
