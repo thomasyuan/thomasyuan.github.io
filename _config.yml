@@ -108,8 +108,8 @@ defaults:
       share: true
       related: true
       classes: wide
-      header:
-        image: "/assets/images/banner.jpg"
+      # header:
+      #  image: "/assets/images/banner.jpg"
 
   # _pages
   - scope:
@@ -119,8 +119,8 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
-      header:
-        image: "/assets/images/banner2.jpg"
+      # header:
+      #  image: "/assets/images/banner2.jpg"
 
 
 category_archive:
