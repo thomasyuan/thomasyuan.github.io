@@ -1,5 +1,5 @@
 ---
-title: "Java Note"
+title: "Andriod Log"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
