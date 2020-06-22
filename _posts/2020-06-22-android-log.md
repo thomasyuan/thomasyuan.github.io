@@ -11,8 +11,7 @@ tags:
 I was thinking how to use log on Android properly, and can control it without re-compile your app.
 Here is what I found.
 
-Long story for short, you should do something like this in you code (An example from AOSP [LocationManagerService.java](
-https://android.googlesource.com/platform/frameworks/base/+/d22261fef84481651e12995062105239d551cbc6/services/core/java/com/android/server/LocationManagerService.java)
+Long story for short, you should do something like this in you code (An example from AOSP [LocationManagerService.java](https://android.googlesource.com/platform/frameworks/base/+/d22261fef84481651e12995062105239d551cbc6/services/core/java/com/android/server/LocationManagerService.java)
 
 ```java
 public class LocationManagerService extends ILocationManager.Stub {
@@ -30,7 +29,7 @@ public class LocationManagerService extends ILocationManager.Stub {
 ```            
 
 Then you can use log.tag.TAG to set the logging level like this `adb shell setprop log.tag.LocationManagerService VERBOSE`. 
-For details, check the document here [isLoggable](https://developer.android.com/reference/android/util/Log.html#isLoggable(java.lang.String,%20int) 
+For details, check the document here [isLoggable](https://developer.android.com/reference/android/util/Log.html)
 
 Why don't wrap those `if (D) Log.d(TAG, "...")` to another function, so it can handle the log logic internally?
 You can find the reason from the comments of android.util.Log.java:
