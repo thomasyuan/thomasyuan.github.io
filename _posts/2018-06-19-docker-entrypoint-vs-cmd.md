@@ -7,7 +7,6 @@ tags:
   - Docker
 ---
 
-# CMD vs ENTRYPOINT
 <!-- TOC -->
 
 - [CMD vs ENTRYPOINT](#cmd-vs-entrypoint)
