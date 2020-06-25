@@ -1,5 +1,5 @@
 ---
-title: "Docker ENTRYPOINT VS CMD"
+title: "Docker ENTRYPOINT vs CMD"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
