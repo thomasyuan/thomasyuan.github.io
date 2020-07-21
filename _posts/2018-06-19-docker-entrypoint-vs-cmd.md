@@ -1,21 +1,12 @@
 ---
 title: "Docker ENTRYPOINT vs CMD"
 excerpt_separator: "<!--more-->"
+toc: true
 categories:
   - Blog
 tags:
   - Docker
 ---
-
-<!-- TOC -->
-
-- [CMD vs ENTRYPOINT](#cmd-vs-entrypoint)
-  - [Override](#override)
-  - [Shell vs. Exec](#shell-vs-exec)
-  - [ENTRYPOINT and CMD](#entrypoint-and-cmd)
-  - [Always Exec](#always-exec)
-
-<!-- /TOC -->
 
 Both ENTRYPOINT and CMD allow you to specify the startup command for an image,
 but there are subtle differences between them. There are many times where 
