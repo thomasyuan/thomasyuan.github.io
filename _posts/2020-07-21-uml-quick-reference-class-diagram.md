@@ -1,6 +1,7 @@
 ---
 title: "UML quick reference - Class Diagram"
 excerpt_separator: "<!--more-->"
+toc: true
 categories:
   - Blog
 tags:
@@ -43,4 +44,5 @@ tags:
 * Aggregation: A special type of association, represents a "part of" relationship. Two classes have separate lifetimes.
 * Composition: A special type of aggregation where parts are destroyed when the whole is destroyed. (same lifetime)
 
-![relationship symbols](assets/images/blogs/uml_classes_relationship.png)
+{% include figure image_path="/assets/images/blogs/uml_classes_relationship.png" alt="relationship" %}
+
