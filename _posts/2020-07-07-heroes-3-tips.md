@@ -1,6 +1,7 @@
 ---
 title: "Heroes 3 Tips"
 excerpt_separator: "<!--more-->"
+toc: true
 categories:
   - Blog
 tags:
