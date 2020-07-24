@@ -6,7 +6,6 @@ categories:
   - Blog
 tags:
   - Gradle
-  - Note
 ---
 
 > Source https://stackoverflow.com/questions/3963708/gradle-how-to-display-test-results-in-the-console-in-real-time
