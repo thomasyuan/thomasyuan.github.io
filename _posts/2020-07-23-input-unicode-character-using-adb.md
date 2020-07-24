@@ -6,7 +6,7 @@ categories:
   - Blog
 tags:
   - Android
-  - Note
+  - Adb
 ---
 
 > Source https://stackoverflow.com/questions/14224549/adb-shell-input-unicode-character
