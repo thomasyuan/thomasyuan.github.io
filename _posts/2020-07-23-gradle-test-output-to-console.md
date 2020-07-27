@@ -18,6 +18,8 @@ test {
     testLogging {
         // optional, when you need run all tests even the code is not changed.
         outputs.upToDateWhen {false}
+        // If use junit 5, need enable JUnit Platform support
+        useJUnitPlatform()
         events "passed", "skipped", "failed"
     }
 }
@@ -31,6 +33,8 @@ android {
         unitTests.all {
             testLogging {
                 outputs.upToDateWhen {false}
+               // If use junit 5, need enable JUnit Platform support
+                useJUnitPlatform()
                 events "passed", "skipped", "failed"
             }
         }
