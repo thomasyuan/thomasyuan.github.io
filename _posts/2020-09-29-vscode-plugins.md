@@ -47,6 +47,11 @@ https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf
 ## For Web
 
 ## For C++
+### CMake Tools
+&#9733; &#9733; &#9733; &#9733;&#9733; &#9733;
+
+Super powerful, change build variant/toolkits/target and run/debug from status bar.
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools
 
 ## For Java
 
