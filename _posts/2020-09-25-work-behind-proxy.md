@@ -35,3 +35,24 @@ git config --global https.proxy https://<username>:<password>@<proxy_address>:<p
 ### Apt
 > https://www.unixmen.com/45713-2/
 > https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-set-the-proxy-for-apt-for-ubuntu-18-04/
+
+### Docker
+```
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo vi /etc/systemd/system/docker.service.d/proxy.conf
+```
+Add the following contents, changing the values to match your environment.
+```
+[Service]
+Environment="HTTP_PROXY=http://<username>:<password>@<proxy_address>:<proxy_port>/"
+Environment="HTTPS_PROXY=https://<username>:<password>@<proxy_address>:<proxy_port>/"
+Environment="NO_PROXY="localhost,127.0.0.1,::1"
+```
+```
+## Reload the daemon configuration.
+sudo systemctl daemon-reload
+## Restart Docker to apply our changes.
+sudo systemctl restart docker.service
+```
+
+> https://www.serverlab.ca/tutorials/containers/docker/how-to-set-the-proxy-for-docker-on-ubuntu/
