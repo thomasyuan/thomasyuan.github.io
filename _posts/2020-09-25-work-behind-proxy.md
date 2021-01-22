@@ -53,6 +53,9 @@ Environment="NO_PROXY="localhost,127.0.0.1,::1"
 sudo systemctl daemon-reload
 ## Restart Docker to apply our changes.
 sudo systemctl restart docker.service
+## run docker without sudo
+sudo usermod -aG docker ${USER}
+su - ${USER}
 ```
 
 > https://www.serverlab.ca/tutorials/containers/docker/how-to-set-the-proxy-for-docker-on-ubuntu/
