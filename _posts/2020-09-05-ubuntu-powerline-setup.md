@@ -13,9 +13,9 @@ tags:
 
 I use it mainly for git repos, to show current branch name and status without run `git branch` and `git status`. Here is how to enable it. (Works on WSL Ubuntu too).
 
-## 0. Install Powerline
+## 0. Install Powerline, powerline-gitstatus and fonts-powerline
 ```bash
-sudo apt install powerline
+sudo apt install powerline powerline-gitstatus fonts-powerline
 ```
 
 ## 1. Enable Powerline for vim
@@ -40,15 +40,7 @@ fi
 ## 3. Use Powerline
 `source ~/.bashrc`
 
-## 4. Install fonts
-If you see some weird symbols on your console now, means you need install some fonts.
-```bash
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-```
-
-## 5. Update Default Settings
+## 4. Update Default Settings
 All config files are located under `/usr/share/powerline/config_files`.
 You can override them by creating `.config/powerline/` folder and put your customized config files there.
 Here is my settings
