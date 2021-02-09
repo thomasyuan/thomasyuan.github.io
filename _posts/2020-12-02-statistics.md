@@ -15,12 +15,22 @@ tags:
  * 峰值（平均值） － μ (miu）
  * 标准差 － σ （sigema）
 
-对于正态分布，无论μ和σ的值如何，都满足68－95－99.7法则
+对于正态分布，无论μ和σ的值如何，都满足68－95－99.7法则，即68%的数据会落在μ±σ区间，95%的数据会落在μ±2σ区间，99.7%的数据会落在μ±3σ区间.
+{% include figure image_path="/assets/images/blogs/6895997.png" alt="68-95-99.7 rules" %}
 
 ### 
 * 中值
 * 均值
 * 方差 （Variance）
-* 标准偏差（Standard Deviation）
+  Population Variance:
+  {% include figure image_path="/assets/images/blogs/populationVariance.png" alt="68-95-99.7 rules" %}
+  Sample Variance:
+  {% include figure image_path="/assets/images/blogs/sampleVariance.png" alt="68-95-99.7 rules" %}
 
+* 标准偏差（Standard Deviation）
+* 变异系数 (Coefficient of Variation)
+  {% include figure image_path="/assets/images/blogs/coefficientOfVariation.png" alt="68-95-99.7 rules" %}
+  
 > https://youtu.be/pSaE2d7YuyI
+> https://www.youtube.com/watch?v=wDAd_QHKoOg
+> http://strata.uga.edu/8370/lecturenotes/variance.html
