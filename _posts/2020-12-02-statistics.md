@@ -18,7 +18,7 @@ tags:
 对于正态分布，无论μ和σ的值如何，都满足68－95－99.7法则，即68%的数据会落在μ±σ区间，95%的数据会落在μ±2σ区间，99.7%的数据会落在μ±3σ区间.
 {% include figure image_path="/assets/images/blogs/6895997.png" alt="68-95-99.7 rules" %}
 
-### 
+### 基本概念
 * 中值
 * 均值
 * 方差 （Variance）
@@ -30,7 +30,8 @@ tags:
 * 标准偏差（Standard Deviation）
 * 变异系数 (Coefficient of Variation)
   {% include figure image_path="/assets/images/blogs/coefficientOfVariation.png" alt="68-95-99.7 rules" %}
-  
-> https://youtu.be/pSaE2d7YuyI
-> https://www.youtube.com/watch?v=wDAd_QHKoOg
-> http://strata.uga.edu/8370/lecturenotes/variance.html
+
+### Reference
+* https://youtu.be/pSaE2d7YuyI
+* https://www.youtube.com/watch?v=wDAd_QHKoOg
+* http://strata.uga.edu/8370/lecturenotes/variance.html
