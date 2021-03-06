@@ -59,10 +59,14 @@ I changed the color for time segment
 ```
 $ cat colorschemes/default.json 
 {
-        "name": "Default",
-        "groups": {
-                "time":                   { "fg": "black", "bg": "gray10", "attrs": ["bold"] }
+    "name": "Default",
+    "groups": {
+        "time": {
+            "fg": "black",
+            "bg": "gray10",
+            "attrs": ["bold"] 
         }
+    }
 }
 ```
 
@@ -70,71 +74,110 @@ And change the shell theme to "default_leftonly"
 ```
 $ cat config.json 
 {
-        "ext": {
-                "shell": {
-                        "theme": "default_leftonly"
-                }
+    "ext": {
+        "shell": {
+            "theme": "default_leftonly"
         }
+    }
 }
 ```
 
 And the default_leftonly theme as well
+```json
+{
+  "segments": {
+    "left": [
+      {
+        "function": "powerline.segments.shell.mode"
+      },
+      {
+        "function": "powerline.segments.common.net.hostname",
+        "priority": 10
+      },
+      {
+        "function": "powerline.segments.common.env.user",
+        "priority": 30
+      },
+      {
+        "function": "powerline.segments.shell.cwd",
+        "priority": 10,
+        "args": {
+          "use_path_separator": true,
+          "dir_limit_depth": 10
+        }
+      },
+      {
+        "function": "powerline_gitstatus.gitstatus",
+        "priority": 40
+      },
+      {
+        "function": "powerline.segments.shell.jobnum",
+        "priority": 20
+      },
+      {
+        "function": "powerline.segments.shell.last_status"
+      }
+    ]
+  }
+}
+
+```
+
+Or this one if you like 2 lines prompt
 ```
 $ cat themes/shell/default_leftonly.json
 {
-        "segments": {
-                "above": [
-                        {
-                                "left": [
-                                        {
-                                                "function": "powerline.segments.shell.mode"
-                                        },
-                                        {
-                                                "function": "powerline.segments.common.net.hostname",
-                                                "priority": 10
-                                        },
-                                        {
-                                                "function": "powerline.segments.common.env.user",
-                                                "priority": 30
-                                        },
-                                        {
-                                                "function": "powerline.segments.shell.cwd",
-                                                "priority": 10,
-                                                "args": {
-                                                        "use_path_separator": true,
-                                                        "dir_limit_depth": 10
-                                                }
-                                        },
-                                        {
-                                                "function": "powerline_gitstatus.gitstatus",
-                                                "priority": 40
-                                        },
-                                        {
-                                                "function": "powerline.segments.shell.jobnum",
-                                                "priority": 20
-                                        }
-                                ],
-                                "right": [
-                                ]
-                        }
-                ],
+  "segments": {
+    "above": [
+      {
         "left": [
-                        {
-                                "function": "powerline.segments.common.time.date",
-                                "args": {
-                                        "format": "%H:%M:%S",
-                                        "istime": true
-                                }
-
-                        },
-                        {
-                                "function": "powerline.segments.shell.last_status"
-                        }
-                ],
-        "right": [
-        ]
+          {
+            "function": "powerline.segments.shell.mode"
+          },
+          {
+            "function": "powerline.segments.common.net.hostname",
+            "priority": 10
+          },
+          {
+            "function": "powerline.segments.common.env.user",
+            "priority": 30
+          },
+          {
+            "function": "powerline.segments.shell.cwd",
+            "priority": 10,
+            "args": {
+              "use_path_separator": true,
+              "dir_limit_depth": 10
+            }
+          },
+          {
+            "function": "powerline_gitstatus.gitstatus",
+            "priority": 40
+          },
+          {
+            "function": "powerline.segments.shell.jobnum",
+            "priority": 20
+          }
+        ],
+        "right": []
+      }
+    ],
+    "left": [
+      {
+        "function": "powerline.segments.common.time.date",
+        "args": {
+          "format": "%H:%M:%S",
+          "istime": true
         }
+      },
+      {
+        "function": "powerline.segments.shell.last_status"
+      }
+    ],
+    "right": []
+  }
 }
+
 ```
 
 
