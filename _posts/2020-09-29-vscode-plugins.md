@@ -12,19 +12,19 @@ tags:
 ## For All Purpose
 
 ### Partial Diff
-&#9733; &#9733; &#9733; &#9733;
+&#9733; &#9733; &#9733; &#9733; &#9733;
 
 Compare (diff) text selections within a file, across files, or to the clipboard
 https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff
 
 ### Remote Development Pack
-&#9733; &#9733; &#9733; &#9733;
+&#9733; &#9733; &#9733; &#9733; &#9733;
 
 Includes 3 extentions for remote development, ssh, container and wsl. very useful especially when your code is for linux, but your workstation is windows.
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
 ### Bracket Pair Colorizer 2
-&#9733; &#9733; &#9733; &#9734;
+&#9733; &#9733; &#9733; &#9733;
 
 A customizable extension for colorizing matching brackets. 
 https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
@@ -42,7 +42,7 @@ Subtly change the workspace color of your workspace. Ideal when you have multipl
 https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock
 
 ### vscode-pdf
-&#9733; &#9733; &#9733;
+&#9733; &#9733; &#9734;
 
 Display pdf file in VSCode.
 https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf
@@ -50,13 +50,13 @@ https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf
 
 ## For Git
 ### GitLens
-&#9733; &#9733; &#9733; &#9733;
+&#9733; &#9733; &#9733; &#9733; &#9733;
 
 Most popular git plugin in VSCode.
 https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
-### Git Graph
-&#9733; &#9733; &#9733; &#9733;
+### Git Graph {% include figure image_path="https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.29.0/1614487049605/Microsoft.VisualStudio.Services.Icons.Default" alt="Git Graph" %}
+&#9733; &#9733; &#9733; &#9733;  &#9734;
 
 Really convenient when you need know the whole picture of the repo.
 https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
@@ -73,3 +73,5 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools
 ## For Java
 
 ## For Docker
+
+### Docker
