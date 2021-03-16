@@ -13,7 +13,6 @@ tags:
 
 ### [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
 <img src="https://ryu1kn.gallerycdn.vsassets.io/extensions/ryu1kn/partial-diff/1.4.1/1579873627532/Microsoft.VisualStudio.Services.Icons.Default" width="64" height="64">
-
 &#9733; &#9733; &#9733; &#9733; &#9733;
 
 Compare (diff) text selections within a file, across files, or to the clipboard
