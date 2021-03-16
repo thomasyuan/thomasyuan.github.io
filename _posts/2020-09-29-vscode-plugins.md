@@ -18,7 +18,7 @@ tags:
 Compare (diff) text selections within a file, across files, or to the clipboard
 
 ### [Remote Development Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-![](https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/vscode-remote-extensionpack/0.20.0/1584138002888/Microsoft.VisualStudio.Services.Icons.Default =64)
+![](https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/vscode-remote-extensionpack/0.20.0/1584138002888/Microsoft.VisualStudio.Services.Icons.Default =64x64)
 &#9733; &#9733; &#9733; &#9733; &#9733;
 
 Includes 3 extentions for remote development, ssh, container and wsl. very useful especially when your code is for linux, but your workstation is windows.
