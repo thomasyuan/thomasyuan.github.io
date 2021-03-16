@@ -55,8 +55,8 @@ https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf
 Most popular git plugin in VSCode.
 https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
-### Git Graph 
-{% image_path="https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.29.0/1614487049605/Microsoft.VisualStudio.Services.Icons.Default" alt="Git Graph" %}
+### [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+![icon](https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.29.0/1614487049605/Microsoft.VisualStudio.Services.Icons.Default)
 &#9733; &#9733; &#9733; &#9733;  &#9734;
 
 Really convenient when you need know the whole picture of the repo.
