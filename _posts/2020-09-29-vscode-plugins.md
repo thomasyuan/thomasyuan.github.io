@@ -12,19 +12,19 @@ tags:
 ## For All Purpose
 
 ### [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
-![](https://ryu1kn.gallerycdn.vsassets.io/extensions/ryu1kn/partial-diff/1.4.1/1579873627532/Microsoft.VisualStudio.Services.Icons.Default =128)
+![](https://ryu1kn.gallerycdn.vsassets.io/extensions/ryu1kn/partial-diff/1.4.1/1579873627532/Microsoft.VisualStudio.Services.Icons.Default =64)
 &#9733; &#9733; &#9733; &#9733; &#9733;
 
 Compare (diff) text selections within a file, across files, or to the clipboard
 
 ### [Remote Development Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-![](https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/vscode-remote-extensionpack/0.20.0/1584138002888/Microsoft.VisualStudio.Services.Icons.Default =128)
+![](https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/vscode-remote-extensionpack/0.20.0/1584138002888/Microsoft.VisualStudio.Services.Icons.Default =64)
 &#9733; &#9733; &#9733; &#9733; &#9733;
 
 Includes 3 extentions for remote development, ssh, container and wsl. very useful especially when your code is for linux, but your workstation is windows.
 
 ### [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-![](https://coenraads.gallerycdn.vsassets.io/extensions/coenraads/bracket-pair-colorizer-2/0.2.0/1594062809176/Microsoft.VisualStudio.Services.Icons.Default =128)
+![](https://coenraads.gallerycdn.vsassets.io/extensions/coenraads/bracket-pair-colorizer-2/0.2.0/1594062809176/Microsoft.VisualStudio.Services.Icons.Default =64)
 &#9733; &#9733; &#9733; &#9733;
 
 A customizable extension for colorizing matching brackets. 
