@@ -1,5 +1,5 @@
 ---
-title: "statistics"
+title: "Statistics"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:

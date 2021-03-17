@@ -1,5 +1,5 @@
 ---
-title: "Output Gradle Test Result To Console"
+title: "Output Gradle Test Result to Console"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:

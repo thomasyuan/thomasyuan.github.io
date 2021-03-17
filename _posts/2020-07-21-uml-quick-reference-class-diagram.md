@@ -1,5 +1,5 @@
 ---
-title: "UML quick reference - Class Diagram"
+title: "UML Quick Reference - Class Diagram"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:

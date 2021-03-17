@@ -1,5 +1,5 @@
 ---
-title: "Get Android Build Info From code"
+title: "Get Android Build Info from code"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:

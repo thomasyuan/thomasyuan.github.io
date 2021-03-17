@@ -1,5 +1,5 @@
 ---
-title: "Java - volatile or synchronized"
+title: "Java - Volatile or Synchronized"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:

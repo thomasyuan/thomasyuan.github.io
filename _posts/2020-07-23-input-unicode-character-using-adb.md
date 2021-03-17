@@ -1,5 +1,5 @@
 ---
-title: "Input Unicode Character By Adb"
+title: "Input Unicode Character by Adb"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:
