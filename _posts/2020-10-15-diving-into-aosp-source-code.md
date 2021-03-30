@@ -37,4 +37,9 @@ This is a very useful plugin when you checking Android document and source code.
 - gomod:      Go to the directory containing a module.
 - pathmod:    Get the directory containing a module.
 
+## Build with CCache
+```
+export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
+```
 
