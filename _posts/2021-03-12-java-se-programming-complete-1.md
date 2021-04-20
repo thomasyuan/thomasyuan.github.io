@@ -1,5 +1,5 @@
 ---
-title: "Java SE: Programming Complete 1"
+title: "Java SE: Programming Complete - 1"
 excerpt_separator: "<!--more-->"
 toc: true
 categories:
@@ -7,11 +7,12 @@ categories:
 tags:
   - Java
   - Certificate
+  - OCP
 ---
 
 > https://learn.oracle.com/ols/course/java-se-programming-complete/82508/85200
 
-## 1. Introduce to Java 
+## Introduce to Java 
 
 #### How Java Works
 * Source code is plain text `.java`
@@ -50,7 +51,3 @@ tags:
 * full qulified class name
 `java -classpath /project/classes ca.learnprogramming.Test`
 > Start from Java 11, you can also just run `java single-file-java-source-code`.
-
-## 2. Primitive Types, Operators, and Flow Control Statements
-
-#### 
