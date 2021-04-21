@@ -58,4 +58,32 @@ sudo usermod -aG docker ${USER}
 su - ${USER}
 ```
 
-> https://www.serverlab.ca/tutorials/containers/docker/how-to-set-the-proxy-for-docker-on-ubuntu/
+### Gradle
+Add your proxy settings to ~/.gradle/gradle.properties
+```
+systemProp.http.proxyHost=www.somehost.org
+systemProp.http.proxyPort=8080
+systemProp.http.proxyUser=userid
+systemProp.http.proxyPassword=password
+systemProp.http.nonProxyHosts=*.nonproxyrepos.com|localhost
+```
+
+> https://docs.gradle.org/current/userguide/build_environment.html#sec:accessing_the_web_via_a_proxy
+
+
+### VS Code Remote
+
+If your remote host is behind a proxy, you may need to set the HTTP_PROXY or HTTPS_PROXY environment variable on the SSH host. Open your ~/.bashrc file add the following (replacing proxy.fqdn.or.ip:3128 with the appropriate hostname / IP and port):
+```
+export HTTP_PROXY=http://proxy.fqdn.or.ip:3128
+export HTTPS_PROXY=$HTTP_PROXY
+
+# Or if an authenticated proxy
+export HTTP_PROXY=http://username:password@proxy.fqdn.or.ip:3128
+export HTTPS_PROXY=$HTTP_PROXY
+```
+
+**In my case, when enabled java extension, I need gradle proxy setup as well.**
+
+> Check "Set HTTP_PROXY / HTTPS_PROXY on the remote host" in [here](https://www.serverlab.ca/tutorials/containers/docker/how-to-set-the-proxy-for-docker-on-ubuntu/)
+
