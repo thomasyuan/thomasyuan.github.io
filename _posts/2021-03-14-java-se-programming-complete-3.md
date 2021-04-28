@@ -53,7 +53,7 @@ tags:
 * When an operation returns an object, you may invoke next operation upon this object immediately.
 * Without method chainning, code appears to be cluttered with *unnecessary intermediate variables*
 
-#### LOcal Date and Time
+#### Local Date and Time
 * Classes `LocalDate`, `LocalTime` and `LocalDateTime` are introduced in Java SE 8, to address the shortcomings of the older java.util.Date and java.util.Calendar. (Thread Safety, API design and timezone)
 * Date and time objects can be created using methods `now()` to get current date and time, or using `of()` for specific date and time.
 * Local Date and Time objects are **immutable**
@@ -67,6 +67,37 @@ tags:
 
 #### Zoned Date and Time
 * Time zones can be applied to local date and time values `java.time.ZonedDateTime`
+* The `java.time.ZoneId` class defines time zones.
+* `ZonedDateTime` provides time zone specific operations such as `withZoneSameInstant`
+* Accounts for daylight saving time and time zone differences.
 
+#### Represent Languages and Countries
+* The `java.util.Locale` class represents lauguages and countries
+* Local can represent just language or a combination of language plus country or area.
 
+#### Format and Parse Numeric Values
+* The `java.text.NumberFormat` class is used to parse and format numeric values.
+```java
+Doulbe d = 0.2;
+Locale locale = new Locale("en", "GB");
+NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+NumberFormat percentageFormat = NumberFormat.getPercentInstance(locale);
+String c = currencyFormat.format(d);
+String p = percentageFormat.format(d);
+```
 
+#### Format and Parse Date and Time Values
+* The `java.time.format.DateTimeFormatter` class is used to parse and format date and time values.
+* You can set custom format pattern or use standard format patterns defined by `java.time.format.FormatStyle` enum.
+
+#### Localizable Resources
+* Resource bundles contain localizable resources.
+* Resource bundles can be represented as plain text file with the extension `.properties`
+* Resources are placed into resource bundles as <key>=<value>
+* The `java.util.ResourceBUndle` class loads bundles and retrieves resources.
+* Default bundle can be used if no locale is specified
+
+#### Format Message Patterns
+* Formatter classes parse and format messages, numbers, date and time values.
+* The `java.text.MessageFormat` class substitutes values into message patterns.
+* Message patterns can be stored in resource bundles. for examle `product={0}, price {1}, quantity {2}, best before {3}` // {x} will be replaced by the real vaule with `MessageFormat.format(pattern, args...)`
