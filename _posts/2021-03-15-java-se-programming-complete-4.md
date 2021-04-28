@@ -21,7 +21,8 @@ tags:
 * Class and method bodies are enclosed with `{}`
 * Uninitialized primitives are defaulted to 0, boolean to false.
 * Uninitialized object references are defaulted to null.
-```java
+
+```
 package <PackageName>;
 
 import <PackageName>.<ClassName>;
