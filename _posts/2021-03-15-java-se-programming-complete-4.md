@@ -74,6 +74,7 @@ import <PackageName>.<ClassName>;
 - Each **Class** has its own memory context
 - Class memory context (also known as static context) is shared by all instances of this class
 - The keyword `static` is ued to mark variables or methods that belong to the class context.
+- To access static context, ojbect reference is not required (but can be used)
 - Attempt to access current instance methods or variable from the static context will result in compiler error.
 - Static initializer runs once, before any other operation (when class is loaded)
 
@@ -86,4 +87,10 @@ import <PackageName>.<ClassName>;
 
   ```
 
-####
+#### Combining Static and Final
+- Shared constants can be defined as `static` and `final` variables
+- It provides a simple way of defining globally visible constatns.
+- Encapsulation (private access modifier) not necessary because value is read-only
+- All `Math` class operations are static
+- Factory methods are static methods that create and return a new instance.
+- `static import` enables referencing static variables and methods of another class as if they are in this class.
