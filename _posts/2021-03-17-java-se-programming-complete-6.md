@@ -50,3 +50,64 @@ tags:
 - No casting is required to assign child to parent reference type
 - Use `instanceof` operator before casting reference from generic to specific type.
 
+#### Reference Code Within the Current or Parent Object
+> You can have same name variable in parent and subclass!!! Well-encapsulated code should only expose the method,
+so all variables should be private. In this case, no issues. **BUT** if the class have public/protected variable,
+then the same name variable in subclass will hide the parenet one. use `this` and `super` to distinguish them.
+
+#### Define Subclass Contructors.
+- The subclass contructor must invoke the superclass constructor.
+- If superclass contains the no-arg constructor (default or explicitly defined), then the subclass can implicity invoke the superclass constructor.
+- If superclass doesn't provide the no-arg constructor, subclass constructor must explicitly invoke superclass constructor.
+- Invocation of superclass constructor must be the first line of code in the subclass constructor.
+
+#### Class and Object Initialization Summary
+```java
+public class Shop {
+  static {}
+  public static void main(Stringp[] args) {
+    Product p1 = new Food();
+  }
+}
+
+public class Object {
+  static {}
+  public Object() {}
+}
+
+public class Product {
+  static {}
+  {}
+  public Production() {}
+}
+
+public class Food extends Product {
+  static {}
+  {}
+  public Food() {}
+}
+```
+- Class loading and initialization execution order:
+(The following code is executed only once.)
+ 1. `Object` class static initializer. (since Object is the root class)
+ 2. `Shop` class static initializer
+ 3. `Product` class static initializer
+ 4. `Food` class static iniializer
+> - All code of the class must be loaded into memory first.
+> - It needs to be loaded only once per class
+- Ojbect instantiation execution order:
+ 1. `Object` class onstructor
+ 2. `Product` instance initializer
+ 3. `Product` constructor
+ 4. `Food` instance initializer
+ 5. `Food` constructor.
+> - Each object instance must be initialized together with all of it's parents.
+> - Each object instance memory contains object data and references to the rest of the class code (shared between all instances).
+
+#### Override Methods and Use Polymorphism
+- The subclass can override parent class methods.
+- The subclass can widen but can't narrow access of methods it overrides.
+- Polymorphism in Java means when a method is declared in a superclass and is overridden in a subclass, the subclass method takes precedence without casting reference to specific subclass type.
+- `Override` annotation is optional, it's used to ensure that subclass method signature matches the superclass method.
+
+
