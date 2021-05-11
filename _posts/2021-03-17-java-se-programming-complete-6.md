@@ -110,4 +110,21 @@ public class Food extends Product {
 - Polymorphism in Java means when a method is declared in a superclass and is overridden in a subclass, the subclass method takes precedence without casting reference to specific subclass type.
 - `Override` annotation is optional, it's used to ensure that subclass method signature matches the superclass method.
 
+#### Define Abstract Classes and Methods
+- Class can't be directly instantiated if it is marked with the `abstract` keyword. (Even there is no abstract method inside)
+- The abstract class purpose is to be extended by one or more concrete subclasses.
+- It may also contain abstract methods that describe method signatures, without a method body.
+
+#### Define Final Classes and Methods
+- The `final` keyword can be used to limit class extensibility
+- Class can't extend a class that is marked with the `final` keyword
+- The subclass can't override a superclass method that is marked with the `final` keyword.
+
+#### Override Object Class Operations
+- `toString()`, `equals()`, `hashCode`
+- The `equals` comare objects, the `==` operator compares values in the **stack**, so either primitive value, or two references. not real data inside the object. Java classes such as `String`, `Number`, `LocalDate` override the `equals` method.
+- The `hashCode` methods should return same hash code if `equals` return true for two object.
+- The `hashCode` should be immutable.
+- A `java.security.MessageDigest` class should be used to generate secure hash values.
+
 
