@@ -15,14 +15,17 @@ tags:
 ## Improved Class Design
 
 #### Use Method Overloading
+
 - Two or more methods, with the same class, that have identical names.
 - Must have a different number, or different types, or different order of parameters, return type doesn't count, compile error.
 - To make it easier for caller to make the call.
 
 #### Variable Number of Arguments
-* The vararg feature enables a variable number of arguments of the same types
-* The vararg parameter is treated as an array, with the `length` constant indicating a number of values.
-* In case where there are other parameters in the method, the vararg parameter must be defined last.
+
+- The vararg feature enables a variable number of arguments of the same types
+- The vararg parameter is treated as an array, with the `length` constant indicating a number of values.
+- In case where there are other parameters in the method, the vararg parameter must be defined last.
+
 ```java
 class example {
   public static void main(String[] args) {}
@@ -32,22 +35,26 @@ class example {
 ```
 
 #### Define Constructors
+
 - Same name as the class name, no return type.
 - A default constructor with no parameters is implicitly added to the class, **only if no other constructors were added**
 - A constructor can invoke another to reuse its logic, by using keyword `this(other constructor parameters);`, and it must be the first line of code in the nvoking constructor.
 - A cycle of constructor invocations is not allowed.
 
-#### Access Modifiers 
+#### Access Modifiers
+
 - public - visible to any class
 - protected - visible to subclasses and class in same package
 - <default> - visible to class in smae package
 - private - visible within the same class only
 
 #### Define Encapsulation
+
 - Information contained within the object should normally be "hidden" inside it.
 - Use access modifiers properly to control access
 
 #### Define Immutability
+
 - Immutability objects present read-only data.
 - Instance variables must be encapsulated (private) to prevent direct access.
 - Instance variables are initialized immediately or via constructors (use `final` or not).
@@ -56,6 +63,7 @@ class example {
 - Instance initializer (compare static initializer, no `static` keyword) is triggered **before** the invocation of the constructor, can initialize `final` instance variable.
 
 #### Enumerations
+
 - Enumeration (enum) provides a **fixed** set of instances of a specific type
 - Enum values are instances of this enum type.
 - Enum values are implicitly `public static final`
@@ -66,8 +74,8 @@ class example {
 - The enum constructor can be invoked outside of enum.
 
 #### Java Memory
+
 - Stack is a memory context of a thread, storing local method variable: primitives or object reference
 - Heap is shared memory, accessible from different method and thread contexts.
 - parameter passing means copying stack values.
 - Garbage collection will clean object when there are no reference pointing to it
-

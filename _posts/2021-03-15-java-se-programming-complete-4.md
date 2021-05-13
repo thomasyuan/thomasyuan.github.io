@@ -88,6 +88,7 @@ import <PackageName>.<ClassName>;
   ```
 
 #### Combining Static and Final
+
 - Shared constants can be defined as `static` and `final` variables
 - It provides a simple way of defining globally visible constatns.
 - Encapsulation (private access modifier) not necessary because value is read-only

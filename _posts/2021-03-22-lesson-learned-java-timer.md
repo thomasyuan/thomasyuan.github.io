@@ -13,8 +13,8 @@ tags:
 ## Issue
 
 When you use Java Timer (java.util.Timer) to set a task for future execution, you should be really careful. Java Timer use currentTimeMillis, which will be affected by system clock.
-> https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/Timer.java
 
+> https://github.com/openjdk-mirror/jdk7u-jdk/blob/master/src/share/classes/java/util/Timer.java
 
 If you want to start a one time timer, you can call `schedule(TimerTask task, long delay)`, here is the sample code.
 
@@ -42,10 +42,12 @@ public class TimerTest {
 ```
 
 When you run the code, if should print out something like this
+
 ```
 1 Timer scheduled.
 12 Time's up!
 ```
+
 It takes about 3 seconds to finish since the delay is set to 3000 milliseconds.
 
 But what if you change the system clock immediately after running the code? The result is that if you change the system back to 10 minutes ago, you have to wait 10 minutes + 3 seconds to get the timeout message.

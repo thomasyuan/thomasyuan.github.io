@@ -19,7 +19,7 @@ tags:
   * Writing slides and listening to music
 * In extremely broad strokes, parallelism is a hardware problem(think multiple CPUs) and concurrency is a software problem (think time-sharing, but also Intel’s “hyperthreading”).
 
-### Standard C++03 didn’t have “threads.” 
+### Standard C++03 didn’t have “threads.”
 * The compiler can rewrite accesses
 * The hardware can reorder accesses
 ### C++11 gave us a “memory model”
@@ -82,7 +82,7 @@ struct TokenPool {
         lk.unlock();
         cv_.notify_one();
     }
- 
+
     Token getToken() {
         std::unique_lock lk(mtx_);
         while (tokens_.empty()) {
@@ -102,7 +102,7 @@ Note:
     }
 ```
 
-can be replaced by 
+can be replaced by
 ```
     cv.wait(lk, []() { return !tokens_.empty(); });
 ```
@@ -162,7 +162,7 @@ class Logger {
 int factorial(future<int>& f) {
 	// do something else
 	int N = f.get();     // If promise is distroyed, exception: std::future_errc::broken_promise
-	cout << "Got from parent: " << N << endl; 
+	cout << "Got from parent: " << N << endl;
 	int res = 1;
 	for (int i=N; i>1; i--)
 		res *= i;
@@ -178,13 +178,13 @@ int main() {
 
 	// Do something else
 	std::this_thread::sleep_for(chrono::milliseconds(20));
-	p.set_value(5);   
+	p.set_value(5);
 
 	cout << "Got from child thread #: " << fu.get() << endl;
 	return 0;
 }
 ```
-  
+
 
 
 
@@ -201,12 +201,12 @@ The shared_mutex class is a synchronization primitive that can be used to protec
 class ThreadSafeConfig {
     std::map<std::string, int> settings_;
     mutable std::shared_mutex rw_;
-    
+
     void set(const std::string& name, int value) {
         std::unique_lock<std::shared_mutex> lk(rw_);
         settings_.insert_or_assign(name, value);
     }
-    
+
     int get(const std::string& name) const {
         std::shared_lock<std::shared_mutex> lk(rw_);
         return settings_.at(name);
@@ -235,7 +235,7 @@ latch is like once_flag in that there is no way to “reset” its counter.
       myLatch.wait();
       printf("Hello from B\n");
     });
-    
+
     printf("Hello from A\n");
     myLatch.count_down();
     threadB.join();

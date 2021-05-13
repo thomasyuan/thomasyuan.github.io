@@ -13,6 +13,7 @@ tags:
 The `gradle test` output doesn't make any sense. Here is the way to fix it.
 
 ## Use Test Logging Event
+
 ```
 test {
     testLogging {
@@ -26,6 +27,7 @@ test {
 ```
 
 For android project, it will be something like this:
+
 ```
 android {
     ...
@@ -44,12 +46,11 @@ android {
 ```
 
 ## Use com.adarshr.test-logger plugin
+
 ```
 plugins {
     id 'com.adarshr.test-logger' version '<version>'
 }
 ```
+
 Reference here https://plugins.gradle.org/plugin/com.adarshr.test-logger
-
-
-

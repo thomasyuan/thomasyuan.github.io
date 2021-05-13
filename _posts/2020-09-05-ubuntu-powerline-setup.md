@@ -14,12 +14,15 @@ tags:
 I use it mainly for git repos, to show current branch name and status without run `git branch` and `git status`. Here is how to enable it. (Works on WSL Ubuntu too).
 
 ## 0. Install Powerline, powerline-gitstatus and fonts-powerline
+
 ```bash
 sudo apt install powerline powerline-gitstatus fonts-powerline
 ```
 
 ## 1. Enable Powerline for vim
+
 Add below content to your ~/.vimrc
+
 ```
 set rtp+=/usr/share/vim/addons/
 set laststatus=2
@@ -27,7 +30,9 @@ set t_Co=256
 ```
 
 ## 2. Enabled Powerline for Bash
+
 Add below content to you ~/.bashrc
+
 ```bash
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   powerline-daemon -q
@@ -38,12 +43,15 @@ fi
 ```
 
 ## 3. Use Powerline
+
 `source ~/.bashrc`
 
 ## 4. Update Default Settings
+
 All config files are located under `/usr/share/powerline/config_files`.
 You can override them by creating `.config/powerline/` folder and put your customized config files there.
 Here is my settings
+
 ```bash
 $ tree
 .
@@ -56,23 +64,25 @@ $ tree
 ```
 
 I changed the color for time segment
+
 ```
-$ cat colorschemes/default.json 
+$ cat colorschemes/default.json
 {
     "name": "Default",
     "groups": {
         "time": {
             "fg": "black",
             "bg": "gray10",
-            "attrs": ["bold"] 
+            "attrs": ["bold"]
         }
     }
 }
 ```
 
 And change the shell theme to "default_leftonly"
+
 ```
-$ cat config.json 
+$ cat config.json
 {
     "ext": {
         "shell": {
@@ -83,6 +93,7 @@ $ cat config.json
 ```
 
 And the default_leftonly theme as well
+
 ```json
 {
   "segments": {
@@ -120,10 +131,10 @@ And the default_leftonly theme as well
     ]
   }
 }
-
 ```
 
 Or this one if you like 2 lines prompt
+
 ```
 $ cat themes/shell/default_leftonly.json
 {
@@ -179,5 +190,3 @@ $ cat themes/shell/default_leftonly.json
 }
 
 ```
-
-

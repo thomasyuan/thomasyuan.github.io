@@ -26,9 +26,9 @@ public class LocationManagerService extends ILocationManager.Stub {
             // fetch package manager
             mPackageManager = mContext.getPackageManager();
             ..
-```            
+```
 
-Then you can use log.tag.TAG to set the logging level like this `adb shell setprop log.tag.LocationManagerService VERBOSE`. 
+Then you can use log.tag.TAG to set the logging level like this `adb shell setprop log.tag.LocationManagerService VERBOSE`.
 For details, check the document here [isLoggable](https://developer.android.com/reference/android/util/Log.html)
 
 Why don't wrap those `if (D) Log.d(TAG, "...")` to another function, so it can handle the log logic internally?
@@ -40,4 +40,3 @@ You can find the reason from the comments of android.util.Log.java:
 > another buffer allocation and copy, and even more pressure on the gc.
 > That means that if your log message is filtered out, **you might be doing
 > significant work** and incurring significant overhead.
-
