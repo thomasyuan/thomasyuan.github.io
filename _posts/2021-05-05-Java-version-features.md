@@ -15,7 +15,7 @@ tags:
 - Functional Interfaces and Lambda Expressions
 - Default and static methods in Interfaces.
 
-* for example, forEach() default implemention in Iterable interface
+* for example, forEach() default implementation in Iterable interface
 
 ```java
 	default void forEach(Consumer<? super T> action) {
@@ -33,7 +33,7 @@ tags:
   - `java.time` - Classes for date, time, date and time combined, time zones, instants, duration, and clocks.
   - `java.time.chrono` - API for representing calendar systems other than ISO-8601. Several predefined chronologies are provided and you can also define your own chronology.
   - `java.time.format` - Classes for formatting and parsing dates and time.
-  - `java.time.temporal` - Extended API, primarily for framework and library writers, allowing interoperations between the date and time classes, querying, and adjustment. Fields and units are defined in this package.
+  - `java.time.temporal` - Extended API, primarily for framework and library writers, allowing inter operations between the date and time classes, querying, and adjustment. Fields and units are defined in this package.
   - `java.time.zone` - Classes that support time zones, offsets from time zones, and time zone rules.
 - Concurrency Utilities Enhancements
 - Java IO improvements
