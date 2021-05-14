@@ -18,12 +18,12 @@ tags:
 * for example, forEach() default implementation in Iterable interface
 
 ```java
-	default void forEach(Consumer<? super T> action) {
-      Objects.requireNonNull(action);
-      for (T t : this) {
-          action.accept(t);
-      }
-  }
+default void forEach(Consumer<? super T> action) {
+    Objects.requireNonNull(action);
+    for (T t : this) {
+        action.accept(t);
+    }
+}
 ```
 
 - Method references provide easy-to-read lambda expressions for methods that already have a name.
