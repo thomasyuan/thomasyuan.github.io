@@ -34,7 +34,7 @@ primes = new int[]{1, 2, 3};
 
 #### Multidimensional Arrays
 
-- Can be of non-square shapes `int[][] matrix = {{4, 1}, {2, 0, 5}};`
+- Can be of non-square shapes `int[][] matrix = { {4, 1}, {2, 0, 5} };`
 - Can have more than two dimensions
 
 #### Copying Array Content
