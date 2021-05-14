@@ -8,8 +8,6 @@ tags:
   - Java
 ---
 
-> https://learn.oracle.com/ols/course/java-se-programming-complete/82508/85200
-
 ## Java 8
 
 > https://www.oracle.com/java/technologies/javase/8-whats-new.html
