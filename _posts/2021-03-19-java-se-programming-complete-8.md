@@ -49,3 +49,33 @@ primes = new int[]{1, 2, 3};
   - Searching through the array `Arrays.binarySearch`
   - Comparing content `Arrays.equals`
   - Sorting array content using `Comparable` or `Comparator`
+
+#### Break and Continue
+
+- You can give a loop with a label.
+- `break` terminates the current loop.
+- `break <label>` terminates the labeled loop.
+- `continue` operator skips the current loop cycle.
+- `continue <label>` skips the labeled loop cycle.
+
+```java
+char[][] matrix = {{'A', 'B', 'C', 'D', 'E'},
+                   {'F', 'G', 'H', 'I', 'K'},
+                   {'L', 'M', 'N', 'O', 'P'},
+                   {'Q', 'R', 'S', 'T', 'U'},
+                   {'V', 'W', 'X', 'Y', 'Z'}};
+StringBuilder txt = new StringBuilder();
+outerLoopLabel:
+for (char[] row : matrix) {
+  for (char value: row) {
+    if (value == 'C') { continue; }
+    if (value == 'H') { continue outerLoopLabel; }
+    if (value == 'N') { break; }
+    if (value == 'S') { break outerLoopLabel; }
+    txt.append(value);
+  }
+  txt.append('\n');
+}
+```
+
+The output of this code is `ABDE\nFGLM\nQR`;
