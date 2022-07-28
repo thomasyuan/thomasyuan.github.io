@@ -28,6 +28,20 @@ sudo snap set system proxy.https=https://<username>:<password>@<proxy_address>:<
 sudo pip install --proxy=https://<username>:<password>@<proxy_address>:<proxy_port> somepackage
 ```
 
+### npm
+
+Use these commands:
+```
+npm config set proxy http://username:password@host:port
+npm config set https-proxy http://username:password@host:port
+```
+Or you can edit directly your ~/.npmrc file:
+```
+proxy=http://username:password@host:port
+https-proxy=http://username:password@host:port
+https_proxy=http://username:password@host:port
+```
+
 ### Git
 
 ```
